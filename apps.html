@@ -1,91 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="svgs/android-brands.svg" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/591980c654.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Righteous&family=Varela+Round&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="svgs/android-brands.svg"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/591980c654.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Righteous&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <title>Apps | Twilight Store</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <div class="tools">
-            <a href="#"><i class="far fa-user-circle" tabindex="0" title="About"></i></a>
-            <i class="fas fa-cog" tabindex="0" title="Settings"></i>
-        </div>
-        <div class="logo">
-            <a href="/"><img src="images/logo.png" alt=""><span>Twilight Store</span></a>
-        </div>
-       <a href="#"><i class="far fa-question-circle" tabindex="0" title="Help"></i></a>
+      <div class="tools">
+        <a href="#"
+          ><i class="far fa-user-circle" tabindex="0" title="About"></i
+        ></a>
+        <i class="fas fa-cog" tabindex="0" title="Settings"></i>
+      </div>
+      <div class="logo">
+        <a href="/"
+          ><img src="images/logo.png" alt="" /><span>Twilight Store</span></a
+        >
+      </div>
+      <a href="#"
+        ><i class="far fa-question-circle" tabindex="0" title="Help"></i
+      ></a>
     </header>
 
     <div class="settings-box">
-        <div class="brightness-selector">
-            <label for="brightness">Brightness</label>
-            <input type="range" name="brightness" id="brightness" min="10" max="150">
-        </div>
+      <div class="brightness-selector">
+        <label for="brightness">Brightness</label>
+        <input
+          type="range"
+          name="brightness"
+          id="brightness"
+          min="10"
+          max="150"
+        />
+      </div>
     </div>
 
     <nav>
-        <a href="index.html"><i class="fas fa-house"></i> Home</a>
-        <a href="categories.html"><i class="fas fa-bars"></i>  Categories</a>
-        <a href="#" class="active-link"><i class="fab fab fa-android"></i>  Apps</a>
-        <a href="games.html"><i class="fas fa-gamepad"></i>  Games</a>
-        <a href="movies.html"><i class="fas fa-film"></i>  Movies</a>
-        <a href="books.html"><i class="fas fa-book"></i>  Books</a>
+      <a href="index.html"><i class="fas fa-house"></i> Home</a>
+      <a href="categories.html"><i class="fas fa-bars"></i> Categories</a>
+      <a href="#" class="active-link"
+        ><i class="fab fab fa-android"></i> Apps</a
+      >
+      <a href="games.html"><i class="fas fa-gamepad"></i> Games</a>
+      <a href="movies.html"><i class="fas fa-film"></i> Movies</a>
+      <a href="books.html"><i class="fas fa-book"></i> Books</a>
     </nav>
 
     <main autofocus>
-        <div class="container">
-            <div class="items app">
-                <div class="app-image"><img src="images/WhatsApp.svg" alt=""></div>
-                <div class="description">
-                    <h3>Whatsapp Desktop</h3>
-                    <p>With WhatsApp, you'll get fast, simple, secure messaging and calling for free*, available on phones all over the world.</p>
-                    <a class="downloader" href="https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe" download><i class="fas fas fa-cloud-download-alt"></i> Download</a>
-                </div>
-            </div>
-            <div class="items app">
-                <div class="app-image"><img src="images/yt-logo.png" alt=""></div>
-                <div class="description">
-                    <h3>YouTube Desktop</h3>
-                    <p>Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.</p>
-                    <a class="downloader" href="https://new-downloads.ytdesktop.com/windows.zip" download><i class="fas fas fa-cloud-download-alt"></i> Download</a>
-                </div>
-            </div>
-            <div class="items app">
-                <div class="app-image"><img src="images/tg-logo.png" alt=""></div>
-                <div class="description">
-                    <h3>Telegram Desktop</h3>
-                    <p>Telegram is a cloud-based mobile and desktop messaging app with a focus on security and speed. A new era of messages.</p>
-                    <a class="downloader" href="https://telegram.org/dl/desktop/win64" download><i class="fas fas fa-cloud-download-alt"></i> Download</a>
-                </div>
-            </div>
-            <div class="items app">
-                <div class="app-image"><img src="images/spotify-logo.png" alt=""></div>
-                <div class="description">
-                    <h3>Spotify Desktop</h3>
-                    <p>Looking for music? Start listening to the best new releases.</p>
-                    <a class="downloader" href="apps/SpotifySetup.exe" download><i class="fas fas fa-cloud-download-alt"></i> Download</a>
-                </div>
-            </div>
-            <div class="items app">
-                <div class="app-image"><img src="images/zoom-logo.png" alt=""></div>
-                <div class="description">
-                    <h3>Zoom Desktop</h3>
-                    <p>Zoom is for you. We're here to help you connect, communicate, and express your ideas so you can get more done together. We're proud to be trusted by millions of enterprises.</p>
-                    <a class="downloader" href="apps/ZoomInstaller.exe" download><i class="fas fas fa-cloud-download-alt"></i> Download</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="items app">
+          <div class="app-image"><img src="images/WhatsApp.svg" alt="" /></div>
+          <div class="description">
+            <h3>Whatsapp Desktop</h3>
+            <p>
+              With WhatsApp, you'll get fast, simple, secure messaging and
+              calling for free*, available on phones all over the world.
+            </p>
+            <a
+              class="downloader"
+              href="https://web.whatsapp.com/desktop/windows/release/x64/WhatsAppSetup.exe"
+              download
+              ><i class="fas fas fa-cloud-download-alt"></i> Download</a
+            >
+          </div>
         </div>
+        <div class="items app">
+          <div class="app-image"><img src="images/yt-logo.png" alt="" /></div>
+          <div class="description">
+            <h3>YouTube Desktop</h3>
+            <p>
+              Enjoy the videos and music you love, upload original content, and
+              share it all with friends, family, and the world on YouTube.
+            </p>
+            <a
+              class="downloader"
+              href="https://new-downloads.ytdesktop.com/windows.zip"
+              download
+              ><i class="fas fas fa-cloud-download-alt"></i> Download</a
+            >
+          </div>
+        </div>
+        <div class="items app">
+          <div class="app-image"><img src="images/tg-logo.png" alt="" /></div>
+          <div class="description">
+            <h3>Telegram Desktop</h3>
+            <p>
+              Telegram is a cloud-based mobile and desktop messaging app with a
+              focus on security and speed. A new era of messages.
+            </p>
+            <a
+              class="downloader"
+              href="https://telegram.org/dl/desktop/win64"
+              download
+              ><i class="fas fas fa-cloud-download-alt"></i> Download</a
+            >
+          </div>
+        </div>
+        <div class="items app">
+          <div class="app-image">
+            <img src="images/spotify-logo.png" alt="" />
+          </div>
+          <div class="description">
+            <h3>Spotify Desktop</h3>
+            <p>Looking for music? Start listening to the best new releases.</p>
+            <a class="downloader" href="apps/SpotifySetup.exe" download
+              ><i class="fas fas fa-cloud-download-alt"></i> Download</a
+            >
+          </div>
+        </div>
+        <div class="items app">
+          <div class="app-image"><img src="images/zoom-logo.png" alt="" /></div>
+          <div class="description">
+            <h3>Zoom Desktop</h3>
+            <p>
+              Zoom is for you. We're here to help you connect, communicate, and
+              express your ideas so you can get more done together. We're proud
+              to be trusted by millions of enterprises.
+            </p>
+            <a class="downloader" href="apps/ZoomInstaller.exe" download
+              ><i class="fas fas fa-cloud-download-alt"></i> Download</a
+            >
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
