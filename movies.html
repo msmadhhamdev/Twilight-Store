@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="svgs/film-solid.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/591980c654.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Righteous&family=Varela+Round&display=swap" rel="stylesheet">
+    <title> Movies | Twilight Store</title>
+</head>
+<body>
+
+    <header>
+        <div class="tools">
+            <a href="#"><i class="far fa-user-circle" tabindex="0" title="About"></i></a>
+            <i class="fas fa-cog" tabindex="0" title="Settings"></i>
+        </div>
+        <div class="logo">
+            <a href="/"><img src="images/logo.png" alt=""><span>Twilight Store</span></a>
+        </div>
+       <a href="#"><i class="far fa-question-circle" tabindex="0" title="Help"></i></a>
+    </header>
+
+    <div class="settings-box">
+        <div class="brightness-selector">
+            <label for="brightness">Brightness</label>
+            <input type="range" name="brightness" id="brightness" min="10" max="150">
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html"><i class="fas fa-house"></i> Home</a>
+        <a href="categories.html"><i class="fas fa-bars"></i>  Categories</a>
+        <a href="apps.html"><i class="fab fab fa-android"></i>  Apps</a>
+        <a href="games.html"><i class="fas fa-gamepad"></i>  Games</a>
+        <a href="#"  class="active-link"><i class="fas fa-film"></i>  Movies</a>
+        <a href="books.html"><i class="fas fa-book"></i>  Books</a>
+    </nav>
+
+    <main autofocus>
+        <div class="movies-container">
+            <div class="movie">
+                <a href="movies/eternals.html">
+                    <div class="movie-image">
+                        <img src="images/eternals.jpeg" alt="">
+                    </div>
+                    <h3>Eternals (HD)</h3>
+                    <p title="Duration">2h 35m</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movies/spiderman-no-way-home.html">
+                    <div class="movie-image">
+                        <img src="images/Spider-Man-No-Way-Home.jpg" alt="">
+                    </div>
+                    <h3>Spiderman No Way Home (HD)</h3>
+                    <p title="Duration">2h 18m</p>
+                </a>
+            </div>
+            <div class="movie">
+                <a href="movies/hotel-transylvania-4.html">
+                    <div class="movie-image">
+                        <img src="images/HOTEL-TRANSYLVANIA-4-Transformania.jpg" alt="">
+                    </div>
+                    <h3>Hotel Transylvania 4 (HD)</h3>
+                    <p title="Duration">1h 27m</p>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

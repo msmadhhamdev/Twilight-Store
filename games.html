@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="svgs/gamepad-solid.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/591980c654.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Righteous&family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Games | Twilight Store</title>
+</head>
+<body>
+
+    <header>
+        <div class="tools">
+            <a href="#"><i class="far fa-user-circle" tabindex="0" title="About"></i></a>
+            <i class="fas fa-cog" tabindex="0" title="Settings"></i>
+        </div>
+        <div class="logo">
+            <a href="/"><img src="images/logo.png" alt=""><span>Twilight Store</span></a>
+        </div>
+       <a href="#"><i class="far fa-question-circle" tabindex="0" title="Help"></i></a>
+    </header>
+
+    <div class="settings-box">
+        <div class="brightness-selector">
+            <label for="brightness">Brightness</label>
+            <input type="range" name="brightness" id="brightness" min="10" max="150">
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html"><i class="fas fa-house"></i> Home</a>
+        <a href="categories.html"><i class="fas fa-bars"></i>  Categories</a>
+        <a href="apps.html"><i class="fab fab fa-android"></i>  Apps</a>
+        <a href="#" class="active-link"><i class="fas fa-gamepad"></i>  Games</a>
+        <a href="movies.html"><i class="fas fa-film"></i>  Movies</a>
+        <a href="books.html"><i class="fas fa-book"></i>  Books</a>
+    </nav>
+
+    <main autofocus>
+        <div class="container">
+            <div class="items app">
+                <div class="app-image"><img class="cod-image" src="images/cod_warzone.jpg" alt=""></div>
+                <div class="description">
+                    <h3>Call of Duty : Warzone</h3>
+                    <p>Welcome to Warzone, the massive free-to-play combat arena from the world of Modern Warfare®. Drop In.</p>
+                    <a class="downloader" href="https://downloads.digitaltrends.com/call-of-duty-warzone/windows/post-download#" download><i class="fas fas fa-cloud-download-alt"></i> Download</a>
+                </div>
+            </div>
+            <div class="items app">
+                <div class="app-image"><img class="cod-image" src="images/portal2.jpeg" alt=""></div>
+                <div class="description">
+                    <h3>Portal 2</h3>
+                    <p>Portal 2 is a 2011 puzzle-platform video game developed by Valve for Windows, Mac OS X, Linux, PlayStation 3, and Xbox 360.</p>
+                    <a class="downloader" href="https://d3icosvzxa9p37.cloudfront.net/w+dzfs_+lhYzGUEv7ZPqwTHkI8PnEpyZmokMlLcsAg0BH91uQACBTKoUfkgchZsnLXBBxoDREkCFqbtuNWOLQG5ia9z89G79QAa6rBT+KBnSffnzVzaCcmfeKd3xjmnoMWxBtldrMSQhzwgJ8hw+HnLbJ5sbJR7gTylt41C6LsrJx8pE6YIrM8wY2uehYp+e_dSTM5Q_lNHp3hdqL+0R26tEBGjLv24F4zYHv_Wmya++fAXm5YycZKayoNtxwhcC32zNzcvWjo_YNgxKiuSvLE+58+QpmeujXWCewJ2W3o5TL4izLTJz_xlnhek7KOm3w9dhKqRJ-GzYAAES3eV6qKHheTjw6igxyjAOHcdzebqBhY+wcn1DT9sy+BMIBVlmT8yCkXNzXZMLzUFE8MsYH" download><i class="fas fas fa-cloud-download-alt"></i> Download</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
