@@ -32,5 +32,9 @@ for (let el of hoverEls) {
 // About
 let aboutBtn = document.querySelectorAll('.fa-user-circle');
 for (let el of aboutBtn) {
-  el.addEventListener('click', () => {});
+  el.addEventListener('click', () => document.querySelector('.about-box').style.display = 'flex');
+}
+let closeBtn = document.querySelectorAll('.about-close-btn');
+for (let el of closeBtn) {
+  el.addEventListener('click', () => document.querySelector('.about-box').style.display = 'none');
 }
