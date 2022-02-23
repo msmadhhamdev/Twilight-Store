@@ -104,6 +104,9 @@ nav {
   box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
   overflow-x: hidden;
   transition: 0.2s;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 nav:hover {
   width: 200px;
@@ -173,7 +176,7 @@ main {
   width: auto;
   border-radius: inherit;
 }
-.cod-image {
+.game-image {
   width: 100% !important;
 }
 .items h3 {
@@ -304,6 +307,7 @@ main {
   grid-template-rows: 400px 400px 400px;
   gap: 38px;
   padding-top: 10px;
+  user-select: none;
 }
 .book {
   display: grid;
