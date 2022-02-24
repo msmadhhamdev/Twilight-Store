@@ -499,7 +499,7 @@ footer {
   width: 100vw;
   display: flex;
   justify-content: center;
-  /* align-items: center */
+  align-items: center;
   background: #ff0045;
 }
 .success-msg {
