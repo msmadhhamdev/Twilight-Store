@@ -444,6 +444,55 @@ footer {
 .copyright {
   font-size: 0.7em;
 }
+/* Help */
+.help-box {
+  display: none;
+  position: fixed;
+  right: 10px;
+  top: 50px;
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 1px 2px 8px 2px rgba(0, 0, 0, 0.2);
+  user-select: none;
+}
+.help-box h3 {
+  font-family: 'Varela Round', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.help-box fieldset {
+  margin: 10px auto;
+  border-radius: 4px;
+  width: 100%;
+}
+.help-box legend {
+  font-family: 'Varela Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 5px;
+}
+.help-box input, textarea {
+  width: 97%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 6px;
+  font-size: 1.02em;
+  font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.help-box button {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  color: #fff;
+  font-weight: 900;
+  font-family: Montserrat, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: #ff0045;
+  cursor: pointer;
+}
+.help-box button:hover {
+  background: #ec0241;
+}
 
 /* Scroll bar */
 ::-webkit-scrollbar {

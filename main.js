@@ -14,7 +14,7 @@ brightnessSelector.addEventListener('input', () => {
   document.body.style = `filter: brightness(${brightnessSelector.value}%);`;
 });
 // Hover Change
-let hoverEls = document.querySelectorAll(
+const hoverEls = document.querySelectorAll(
   '.fa-user-circle, .fa-question-circle'
 );
 for (let el of hoverEls) {
@@ -30,11 +30,31 @@ for (let el of hoverEls) {
   });
 }
 // About
-let aboutBtn = document.querySelectorAll('.fa-user-circle');
+const aboutBtn = document.querySelectorAll('.fa-user-circle');
 for (let el of aboutBtn) {
   el.addEventListener('click', () => document.querySelector('.about-box').style.display = 'flex');
 }
-let closeBtn = document.querySelectorAll('.about-close-btn');
+const closeBtn = document.querySelectorAll('.about-close-btn');
 for (let el of closeBtn) {
   el.addEventListener('click', () => document.querySelector('.about-box').style.display = 'none');
+}
+// Help
+const helpBtn = document.querySelectorAll('.fa-question-circle');
+for (let el of helpBtn) {
+  el.addEventListener('click', () => {
+    let helpBox = document.querySelector('.help-box');
+    if (helpBox.style.display === 'block') {
+      helpBox.style.display = 'none';
+    }
+    else {
+      helpBox.style.display = 'block';
+    }
+  });
+}
+// Help Input Validator
+const textFields = document.querySelectorAll('input, textarea');
+for (let el of textFields) {
+  el.addEventListener('focus', () => el.parentElement.style.borderColor = 'limegreen');
+  el.addEventListener('blur', () => el.parentElement.style.borderColor = '#ccc');
+  el.addEventListener('invalid', () => el.parentElement.style.borderColor = '2px solid #f00');
 }
