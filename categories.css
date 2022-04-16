@@ -134,8 +134,8 @@ nav a i {
 }
 main {
   overflow-y: auto;
-  height: 93.2vh;
-  max-height: 93.2vh;
+  height: 92vh;
+  max-height: 92vh;
   margin-left: 80px;
 }
 .container {
