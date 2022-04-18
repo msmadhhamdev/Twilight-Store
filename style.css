@@ -408,8 +408,7 @@ main {
 }
 .about-me {
   width: 68%;
-  font-size: 1.2em;
-  line-height: 46px;
+  line-height: 40px;
   font-family: Montserrat, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .about-me h2 {
