@@ -609,6 +609,8 @@ footer {
   main {
     margin-left: 0;
     padding: 10px;
-    height: 84vh;
+    height: 79vh;
+    overflow-y: auto;
+    max-height: 79vh;
   }
 }
