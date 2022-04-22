@@ -344,3 +344,74 @@ footer {
 .success-msg a:hover {
   text-decoration: underline;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 0.8em;
+    padding: 4px;
+  }
+  header .tools {
+    width: 20%;
+  }
+  header .logo {
+    width: 40%;
+  }
+  header .logo span {
+    font-size: 1em;
+  }
+  header .logo img {
+    width: 30px;
+  }
+  nav {
+    font-size: 0.7em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    margin: 0;
+    padding: 10px 5px;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: 0 -1px 10px 1px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+  }
+  nav:hover {
+    width: 100%;
+  }
+  nav a {
+    width: 50px;
+    color: #000;
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+    padding: 10px 20px;
+    height: 100%;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+  nav a:hover {
+    color: #ff0045 !important;
+  }
+  nav a i {
+    width: 100%;
+    margin: 8px 0 0 0;
+    padding: 0;
+    display: block;
+  }
+  nav a span {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+  }
+  main {
+    margin-left: 0;
+    padding: 10px;
+    height: 89vh;
+  }
+}
