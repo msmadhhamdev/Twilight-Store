@@ -585,7 +585,8 @@ footer {
     width: 50px;
     color: #000;
     font-family: 'Varela Round', Arial, Helvetica, sans-serif;
-    padding: 18px;
+    padding: 10px;
+    height: 100%;
     margin: 0;
     display: block;
     text-align: center;
@@ -595,7 +596,7 @@ footer {
   }
   nav a i {
     width: 100%;
-    margin: 0 0 4px 0;
+    margin: 8px 0 0 0;
     padding: 0;
     display: block;
   }
@@ -603,6 +604,7 @@ footer {
     display: block;
     width: 100%;
     text-align: center;
+    margin-top: 10px;
   }
   main {
     margin-left: 0;
