@@ -573,7 +573,7 @@ footer {
     width: 100%;
     margin: 0;
     padding: 10px 5px;
-    border-radius: 0;
+    border-radius: 10px 10px 0 0;
     background: #fff;
     box-shadow: 0 -1px 10px 1px rgba(0, 0, 0, 0.2);
     overflow: visible;
@@ -623,53 +623,15 @@ footer {
   .items {
     font-size: 0.6em;
   }
-  .items:hover {
-    box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.4);
-  }
   .items .app-image {
     width: 42%;
     height: 100%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .items img {
     height: auto;
     width: 100%;
-    border-radius: inherit;
-  }
-  .game-image {
-    width: 100% !important;
-  }
-  .items h3 {
-    margin: 5px auto 2px auto;
-    font-family: 'Varela Round', 'Trebuchet MS', 'Lucida Sans Unicode',
-      'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
-  .items .description {
-    width: 52%;
-    font-size: 0.8em;
-    margin: 0 4px 0 8px;
-  }
-  .items .description p {
-    height: 62%;
-    width: 100%;
-    margin-right: 2px;
-    word-wrap: break-word;
-    text-align: justify;
-    color: rgba(0, 0, 0, 0.6);
-    font-family: 'varela Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   .items .downloader {
-    display: inline-block;
     width: 89%;
-    text-align: center;
-    color: #000;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
-    padding: 6px 10px;
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
   }
 }
