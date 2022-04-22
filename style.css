@@ -561,7 +561,7 @@ footer {
     width: 30px;
   }
   nav {
-    font-size: 0.6em;
+    font-size: 0.7em;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -570,7 +570,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     height: 5vh;
-    width: 97%;
+    width: 98%;
     margin: 0;
     padding: 10px 5px;
     border-radius: 0;
@@ -582,11 +582,12 @@ footer {
     width: 97%;
   }
   nav a {
-    width: 40px;
+    width: 50px;
     color: #000;
     font-family: 'Varela Round', Arial, Helvetica, sans-serif;
-    padding: 5px;
+    padding: 10px;
     margin: 0;
+    height: 100%;
     display: block;
     text-align: center;
   }
@@ -597,5 +598,9 @@ footer {
     width: 15px;
     margin: 0;
     padding: 0;
+  }
+  main {
+    margin-left: 0;
+    padding: 10px;
   }
 }
