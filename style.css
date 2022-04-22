@@ -562,7 +562,7 @@ footer {
   }
   nav {
     font-size: 0.7em;
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0;
     right: 0;
@@ -585,9 +585,8 @@ footer {
     width: 50px;
     color: #000;
     font-family: 'Varela Round', Arial, Helvetica, sans-serif;
-    padding: 10px;
+    padding: 25px;
     margin: 0;
-    height: 100%;
     display: block;
     text-align: center;
   }
@@ -598,6 +597,11 @@ footer {
     width: 15px;
     margin: 0;
     padding: 0;
+    display: block;
+  }
+  nav a span {
+    display: block;
+    text-align: center;
   }
   main {
     margin-left: 0;
