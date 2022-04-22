@@ -616,7 +616,7 @@ footer {
   .container {
     display: grid;
     grid-template-columns: 235px 235px 235px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
     padding-top: 10px;
     gap: 18px;
   }
