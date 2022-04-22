@@ -579,7 +579,7 @@ footer {
     overflow: visible;
   }
   nav:hover {
-    width: 97%;
+    width: 100%;
   }
   nav a {
     width: 50px;
