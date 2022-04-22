@@ -590,6 +590,7 @@ footer {
     margin: 0;
     display: block;
     text-align: center;
+    border-radius: 20px;
   }
   nav a:hover {
     color: #ff0045 !important;
