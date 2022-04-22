@@ -545,8 +545,8 @@ footer {
 /* Media Queries */
 @media screen and (max-width: 768px) {
   header {
-    font-size: 0.8em;
-    padding: 4px;
+    font-size: 1em;
+    padding: 8px;
   }
   header .tools {
     width: 20%;
