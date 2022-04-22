@@ -541,3 +541,61 @@ footer {
   background: #ff0045;
   border-radius: 10px;
 }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  header {
+    font-size: 0.8em;
+    padding: 4px;
+  }
+  header .tools {
+    width: 20%;
+  }
+  header .logo {
+    width: 40%;
+  }
+  header .logo span {
+    font-size: 1em;
+  }
+  header .logo img {
+    width: 30px;
+  }
+  nav {
+    font-size: 0.6em;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5vh;
+    width: 97%;
+    margin: 0;
+    padding: 10px 5px;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: 0 -1px 10px 1px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+  }
+  nav:hover {
+    width: 97%;
+  }
+  nav a {
+    width: 40px;
+    color: #000;
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin: 0;
+    display: block;
+    text-align: center;
+  }
+  nav a:hover {
+    color: #ff0045 !important;
+  }
+  nav a i {
+    width: 15px;
+    margin: 0;
+    padding: 0;
+  }
+}
