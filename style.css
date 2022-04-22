@@ -600,6 +600,7 @@ footer {
     margin: 8px 0 0 0;
     padding: 0;
     display: block;
+    font-size: 2em;
   }
   nav a span {
     display: block;
