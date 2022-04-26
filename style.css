@@ -146,7 +146,7 @@ main {
   grid-template-columns: 400px 400px 400px;
   grid-template-rows: 150px 150px 150px 150px 150px;
   gap: 20px;
-  padding: 10px 5px;
+  padding: 15px 5px;
 }
 .items {
   display: flex;
