@@ -144,9 +144,9 @@ main {
 .container {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 140px 140px 140px;
-  gap: 25px;
-  padding-top: 10px;
+  grid-template-rows: 150px 150px 150px 150px 150px;
+  gap: 20px;
+  padding: 10px 5px;
 }
 .items {
   display: flex;
@@ -207,6 +207,7 @@ main {
   padding: 6px 10px;
   background: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
+  margin-top: 6px;
 }
 .downloader:hover {
   color: #fff;
