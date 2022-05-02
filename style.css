@@ -32,7 +32,7 @@ header i {
   font-size: 1.6em;
   cursor: pointer;
 }
-header .fa-cog:hover {
+header .appearance:hover {
   background: #eee;
 }
 header .tools {
@@ -162,6 +162,9 @@ main {
 .items:hover {
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.4);
 }
+.dark-item-shadow:hover {
+  box-shadow: 1px 1px 8px 1px rgba(255, 255, 255, 0.4);
+}
 .items .app-image {
   width: 48%;
   height: 100%;
@@ -182,11 +185,13 @@ main {
   margin: 5px auto 2px auto;
   font-family: 'Varela Round', 'Trebuchet MS', 'Lucida Sans Unicode',
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: currentColor;
 }
 .items .description {
   width: 52%;
   font-size: 0.8em;
   margin: 0 4px 0 8px;
+  color: currentColor;
 }
 .items .description p {
   height: 62%;
@@ -194,14 +199,14 @@ main {
   margin-right: 2px;
   word-wrap: break-word;
   text-align: justify;
-  color: rgba(0, 0, 0, 0.6);
   font-family: 'varela Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: currentColor;
 }
 .items .downloader {
   display: inline-block;
   width: 92%;
   text-align: center;
-  color: #000;
+  color: currentColor;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
   padding: 6px 10px;
@@ -536,10 +541,10 @@ footer {
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
-  background: #aaa;
+  background: #ccc;
 }
 ::-webkit-scrollbar-thumb {
-  background: #ff0045;
+  background: #444;
   border-radius: 10px;
 }
 

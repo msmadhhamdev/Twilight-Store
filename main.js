@@ -1,17 +1,29 @@
 // Settings
-let customizeBtn = document.querySelector('.fa-cog');
+let customizeBtn = document.querySelector('.appearance');
 customizeBtn.addEventListener('click', () => {
-  let customizeBox = document.querySelector('.settings-box');
-  if (customizeBox.style.display === 'grid') {
-    customizeBox.style.display = 'none';
+  if (customizeBtn.classList.contains('fa-moon')) {
+    customizeBtn.classList.replace('fa-moon', 'fa-sun');
+    document.querySelector('header').style.filter = "invert()";
+    document.querySelector('nav').style.filter = "invert()";
+    document.querySelectorAll('.items').forEach(item => {
+      item.style = "background: #111 !important; color: #eee !important;";
+      item.classList.add('dark-item-shadow');
+      document.querySelectorAll('.downloader').forEach(btn => btn.style = "filter: invert()");
+      customizeBtn.setAttribute('title', 'Light Mode');
+    });
+    document.body.style = 'background: #222 !important';
   } else {
-    customizeBox.style.display = 'grid';
+    customizeBtn.classList.replace('fa-sun', 'fa-moon');
+    document.querySelector('header').style.filter = "invert() invert()";
+    document.querySelector('nav').style.filter = "invert() invert()";
+    document.querySelectorAll('.items').forEach(item => {
+      item.style = "background: #fff !important; color: #000 !important;";
+      item.classList.remove('dark-item-shadow');
+      document.querySelectorAll('.downloader').forEach(btn => btn.style = "filter: invert() invert()");
+      customizeBtn.setAttribute('title', 'Dark Mode');
+    });
+    document.body.style = 'background: #eee !important';
   }
-});
-//  Brightness set
-let brightnessSelector = document.getElementById('brightness');
-brightnessSelector.addEventListener('input', () => {
-  document.body.style = `filter: brightness(${brightnessSelector.value}%);`;
 });
 // Hover Change
 const hoverEls = document.querySelectorAll(
