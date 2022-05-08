@@ -18,6 +18,17 @@ const darkMode = () => {
     item.style = "background: #111 !important; color: #eee !important;";
     item.classList.add('dark-item-shadow');
   });
+  document.querySelectorAll('.book').forEach(book => {
+    book.style = "color: #fff; background: #111";
+    book.classList.add('dark-item-shadow');
+    book.childNodes[5].style = "filter: invert()";
+  });
+  document.querySelectorAll('.movie').forEach(movie => {
+    movie.firstElementChild.style = "color: #fff";
+    movie.style = "background: #111";
+    movie.classList.add('dark-item-shadow');
+
+  });
   document.querySelectorAll('.downloader').forEach(btn => btn.style = "filter: invert()");
   customizeBtn.setAttribute('title', 'Light Mode');
   document.querySelector('.about-container').style = "filter: invert()";
@@ -34,6 +45,16 @@ const darkMode = () => {
     document.querySelectorAll('.items').forEach(item => {
       item.style = "background: #fff !important; color: #000 !important;";
       item.classList.remove('dark-item-shadow');
+    });
+    document.querySelectorAll('.book').forEach(book => {
+      book.style = "color: #000; background: #fff";
+      book.classList.remove('dark-item-shadow');
+      book.childNodes[5].style = "filter: invert() invert()";
+    });
+    document.querySelectorAll('.movie').forEach(movie => {
+      movie.firstElementChild.style = "color: #000";
+      movie.style = "background: #fff";
+      movie.classList.remove('dark-item-shadow');
     });
     document.querySelectorAll('.downloader').forEach(btn => btn.style = "filter: invert() invert()");
       customizeBtn.setAttribute('title', 'Dark Mode');

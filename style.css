@@ -139,7 +139,7 @@ nav a i {
 main {
   overflow-y: auto;
   height: 92vh;
-  max-height: 92vh;
+  max-height: 91.5vh;
   margin-left: 80px;
 }
 .container {
@@ -164,7 +164,7 @@ main {
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.4);
 }
 .dark-item-shadow:hover {
-  box-shadow: 1px 1px 8px 1px rgba(255, 255, 255, 0.4);
+  box-shadow: 1px 1px 8px 1px rgba(255, 255, 255, 0.4) !important;
 }
 .items .app-image {
   width: 48%;
@@ -223,7 +223,7 @@ main {
 .movies-container {
   display: grid;
   grid-template-columns: 280px 280px 280px 280px;
-  grid-template-rows: 250px 250px 250px;
+  grid-template-rows: 250px;
   gap: 38px;
   padding-top: 10px;
 }
@@ -310,7 +310,7 @@ main {
 .books-container {
   display: grid;
   grid-template-columns: 200px 200px 200px 200px 200px 200px;
-  grid-template-rows: 400px 400px 400px;
+  grid-template-rows: 400px;
   gap: 38px;
   padding-top: 10px;
   user-select: none;
@@ -327,6 +327,9 @@ main {
 }
 .book:hover {
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.book a {
+  color: #ff0045;
 }
 .book-image {
   width: 100%;
@@ -402,7 +405,7 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 60%;
-  height: 50%;
+  height: 52%;
   border-radius: 10px;
   padding: 10px;
   background: #fff;
