@@ -201,6 +201,9 @@ main {
   z-index: 2;
   user-select: none;
 }
+.about-container a {
+  color: #ff0045;
+}
 .about-container {
   display: flex;
   justify-content: space-between;

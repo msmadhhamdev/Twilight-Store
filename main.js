@@ -20,6 +20,10 @@ const darkMode = () => {
   });
   document.querySelectorAll('.downloader').forEach(btn => btn.style = "filter: invert()");
   customizeBtn.setAttribute('title', 'Light Mode');
+  document.querySelector('.about-container').style = "filter: invert()";
+  document.querySelector('.about-container img').style = "filter: invert()";
+  document.querySelector('.help-box').style = "filter: invert()";
+  document.querySelector('.help-box').style = "filter: invert()";
   document.body.style = 'background: #222 !important';
   localStorage.setItem('appearance', 'dark');
 }
@@ -37,6 +41,10 @@ const darkMode = () => {
       localStorage.setItem('appearance', 'light');
       document.querySelectorAll('.downloader').forEach(btn => btn.style = "filter: invert() invert()");
       customizeBtn.setAttribute('title', 'Dark Mode');
+      document.querySelector('.about-container').style = "filter: invert() invert()";
+      document.querySelector('.about-container img').style = "filter: invert() invert()";
+      document.querySelector('.help-box').style = "filter: invert() invert()";
+      document.querySelector('.help-box').style = "filter: invert() invert()";
       document.body.style = 'background: #eee !important';
       localStorage.setItem('appearance', 'light');
   }
