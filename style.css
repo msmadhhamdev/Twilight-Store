@@ -96,7 +96,7 @@ nav {
   align-content: center;
   grid-template-rows: 70px 70px 70px 70px 70px 70px;
   gap: 10px;
-  height: 90vh;
+  height: 89vh;
   width: 60px;
   margin: 10px;
   border-radius: 10px;
@@ -382,6 +382,59 @@ main {
   text-align: center;
 }
 /* Notifications */
+.notify-list {
+  padding: 0 10px 10px 10px;
+  background: #fff;
+  margin: 14px 16px 10px 10px;
+  border-radius: 10px;
+  height: 92%;
+  overflow-y: auto;
+}
+.notify-list .message {
+  margin: 10px 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: inherit;
+  border: 1px solid #ccc;
+}
+.message::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: relative;
+  right: 15px;
+  bottom: 34px;
+  border-radius: 50%;
+  background: #ff0045;
+}
+.notify-list .message:hover {
+  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.3);
+  border-color: #000;
+}
+.message div {
+  width: 94%;
+}
+.message h2 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.message p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.message i {
+  padding: 10px;
+  background: #ff0045;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.message i:hover {
+  background: #555;
+}
 /* About */
 .about-box {
   position: fixed;
