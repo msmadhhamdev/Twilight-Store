@@ -33,8 +33,8 @@ const darkMode = () => {
   customizeBtn.setAttribute('title', 'Light Mode');
   document.querySelector('.about-container').style = "filter: invert()";
   document.querySelector('.about-container img').style = "filter: invert()";
-  document.querySelector('.help-box').style = "filter: invert()";
-  document.querySelector('.help-box').style = "filter: invert()";
+  document.querySelector('.help-box').style = 'filter: invert()';
+  document.querySelector('.help-box').style = 'filter: invert()';
   document.body.style = 'background: #222 !important';
   localStorage.setItem('appearance', 'dark');
 }
