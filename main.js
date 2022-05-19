@@ -29,6 +29,9 @@ const darkMode = () => {
     movie.classList.add('dark-item-shadow');
 
   });
+  document.querySelectorAll('.message').forEach(msg => {
+    msg.style = "filter: invert()";
+  });
   document.querySelectorAll('.downloader').forEach(btn => btn.style = "filter: invert()");
   customizeBtn.setAttribute('title', 'Light Mode');
   document.querySelector('.about-container').style = "filter: invert()";
@@ -55,6 +58,9 @@ const darkMode = () => {
       movie.firstElementChild.style = "color: #000";
       movie.style = "background: #fff";
       movie.classList.remove('dark-item-shadow');
+    });
+    document.querySelectorAll('.message').forEach(msg => {
+      msg.style = "filter: invert() invert()";
     });
     document.querySelectorAll('.downloader').forEach(btn => btn.style = "filter: invert() invert()");
       customizeBtn.setAttribute('title', 'Dark Mode');

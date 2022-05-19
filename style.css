@@ -384,7 +384,6 @@ main {
 /* Notifications */
 .notify-list {
   padding: 0 10px 10px 10px;
-  background: #fff;
   margin: 14px 16px 10px 10px;
   border-radius: 10px;
   height: 92%;
@@ -397,7 +396,8 @@ main {
   justify-content: space-between;
   align-items: center;
   border-radius: inherit;
-  border: 1px solid #ccc;
+  color: #000;
+  background: #fff;
 }
 .message::before {
   content: "";
@@ -408,10 +408,6 @@ main {
   bottom: 34px;
   border-radius: 50%;
   background: #ff0045;
-}
-.notify-list .message:hover {
-  box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.3);
-  border-color: #000;
 }
 .message div {
   width: 94%;
@@ -428,12 +424,13 @@ main {
 .message i {
   padding: 10px;
   background: #ff0045;
+  border: 4px solid #fff;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
 }
 .message i:hover {
-  background: #555;
+  border: 4px double #fff;
 }
 /* About */
 .about-box {
