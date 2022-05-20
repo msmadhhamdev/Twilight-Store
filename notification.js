@@ -1,3 +1,16 @@
+const notifyAppearanceCheck = () => {
+    let getAppearance = localStorage.getItem('appearance');
+    if (getAppearance == 'dark') {
+      document.querySelectorAll('.message').forEach(msg => {
+          msg.style = "filter: invert()";
+      });
+    } else if (getAppearance == 'light') {
+        document.querySelectorAll('.message').forEach(msg => {
+            msg.style = "filter: invert() invert()";
+        });
+    }
+}
+
 const notifyCheckLength = () => {
     const listLength = document.querySelector('.notify-list').children.length;
     if (listLength > 0) {
@@ -30,7 +43,8 @@ const getNotifications = () => {
                 notifyCheckLength();
             });
             notifyCheckLength();
-        })
-    })
+            notifyAppearanceCheck();
+        });
+    });
 }
 getNotifications();

@@ -396,7 +396,6 @@ main {
   justify-content: space-between;
   align-items: center;
   border-radius: inherit;
-  color: #000;
   background: #fff;
 }
 .message::before {

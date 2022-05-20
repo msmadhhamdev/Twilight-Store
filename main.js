@@ -27,7 +27,6 @@ const darkMode = () => {
     movie.firstElementChild.style = "color: #fff";
     movie.style = "background: #111";
     movie.classList.add('dark-item-shadow');
-
   });
   document.querySelectorAll('.message').forEach(msg => {
     msg.style = "filter: invert()";
@@ -40,6 +39,7 @@ const darkMode = () => {
   document.querySelector('.help-box').style = 'filter: invert()';
   document.body.style = 'background: #222 !important';
   localStorage.setItem('appearance', 'dark');
+  
 }
   const lightMode = () => {
     customizeBtn.classList.replace('fa-sun', 'fa-moon');
