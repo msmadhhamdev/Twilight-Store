@@ -39,7 +39,7 @@ const darkMode = () => {
   document.querySelector('.help-box').style = 'filter: invert()';
   document.body.style = 'background: #222 !important';
   localStorage.setItem('appearance', 'dark');
-  
+  document.querySelector('.page-head').style = 'filter: invert()';
 }
   const lightMode = () => {
     customizeBtn.classList.replace('fa-sun', 'fa-moon');
@@ -74,6 +74,7 @@ const darkMode = () => {
       document.querySelector('.help-box').style = "filter: invert() invert()";
       document.body.style = 'background: #eee !important';
       localStorage.setItem('appearance', 'light');
+      document.querySelector('.page-head').style = 'filter: invert() invert()';
   }
   //onLoad Call
   appearanceCheck();
