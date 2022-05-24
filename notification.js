@@ -16,7 +16,8 @@ const notifyCheckLength = () => {
     if (listLength > 0) {
         document.title = `(${listLength}) Twilight Store | Notifications`;
     } else if (listLength == false) {
-        document.querySelector('.notify-list').innerHTML = 'No notifications arrived, all cleared!';
+        document.querySelector('.notify-list').innerHTML = '<div class="notify-callback">No notifications arrived, all cleared!</div>';
+        document.title = 'Twilight Store | Notifications';
     }
 }
 

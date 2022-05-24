@@ -116,13 +116,13 @@ for (let el of closeBtn) {
 // Help
 const helpBtn = document.querySelectorAll('.fa-question-circle');
 for (let el of helpBtn) {
-  el.addEventListener('click', () => {
+  el.addEventListener('click', (ev) => {
     let helpBox = document.querySelector('.help-box');
     if (helpBox.style.display === 'block') {
       helpBox.style.display = 'none';
     }
     else {
-      helpBox.style.display = 'block';
+      helpBox.style.display = 'block'
     }
   });
 }
