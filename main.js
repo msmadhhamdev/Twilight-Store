@@ -129,7 +129,7 @@ for (let el of helpBtn) {
 // Help Input Validator
 const textFields = document.querySelectorAll('input, textarea');
 for (let el of textFields) {
-  el.addEventListener('focus', () => el.parentElement.style.borderColor = 'limegreen');
+  el.addEventListener('focus', () => el.parentElement.style.borderColor = '#002');
   el.addEventListener('blur', () => el.parentElement.style.borderColor = '#ccc');
-  el.addEventListener('invalid', () => el.parentElement.style.borderColor = '2px solid #f00');
+  el.addEventListener('invalid', () => el.parentElement.style.borderColor = '#f00');
 }

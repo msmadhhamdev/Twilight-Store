@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <script src="main.js" defer></script>
+    <script src="movies.js" defer></script>
     <title>Movies | Twilight Store</title>
   </head>
   <body>
@@ -36,20 +37,6 @@
         ><i class="far fa-question-circle" tabindex="0" title="Help"></i
       ></a>
     </header>
-
-    <div class="settings-box">
-      <div class="brightness-selector">
-        <label for="brightness">Brightness</label>
-        <input
-          type="range"
-          name="brightness"
-          id="brightness"
-          min="10"
-          max="150"
-        />
-      </div>
-    </div>
-
     <nav>
       <a href="index.html"><i class="fas fa-house"></i> Home</a>
       <a href="apps.html"><i class="fab fab fa-android"></i> Apps</a>
@@ -121,6 +108,23 @@
         </div>
       </div>
     </main>
+    <div class="alert-msg">
+      <div class="alertmsg-container">
+        <h1><i class="fas fa-triangle-exclamation"></i> Download a Torrent app</h1>
+        <h3>The links to download the Movies require a Torrent app</h3>
+        <h3>Here's a list of some Popular Torrent Apps:</h3>
+        <ul>
+          <li><a href="https://www.qbittorrent.org/">qBittorrent</a></li>
+          <li><a href="https://www.bittorrent.com/">BitTorent</a></li>
+          <li><a href="https://www.bitlord.com/">Bitlord</a></li>
+          <li><a href="http://www.vuze.com/">Vuze</a></li>
+          <li><a href="https://deluge-torrent.org/">Deluge</a></li>
+          <li><a href="https://bitport.io/">Bitport</a></li>
+          <li><a href="https://www.utorrent.com/">uTorrent</a></li>
+        </ul>
+        <button class="alertmsg-done">Done</button>
+      </div>
+    </div>
     <div class="about-box">
       <div class="about-container">
         <div class="my-image"><img src="images/adhham.jpeg" alt="" loading="lazy"></div>

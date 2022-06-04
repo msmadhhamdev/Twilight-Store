@@ -61,31 +61,6 @@ header .logo span {
 header .logo img {
   width: 50px;
 }
-.settings-box {
-  position: absolute;
-  left: 100px;
-  top: 50px;
-  z-index: 1;
-  width: 240px;
-  display: none;
-  grid-template-columns: 240px;
-  border-radius: 6px;
-  padding: 10px;
-  background: #fff;
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-}
-.settings-box label {
-  font-weight: bold;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-  cursor: pointer;
-}
-.settings-box .brightness-selector {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-}
 nav {
   position: absolute;
   display: grid;
@@ -175,8 +150,10 @@ main {
   background: #fff;
   padding: 5px;
   transition: 0.2s;
+  cursor: pointer;
 }
 .items:hover {
+  transform: translate(0, -1%);
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.4);
 }
 .dark-item-shadow:hover {
@@ -249,8 +226,11 @@ main {
   margin: 10px;
   padding: 10px;
   background: #fff;
+  transition: 0.2s;
+  cursor: pointer;
 }
 .movie:hover {
+  transform: translate(0, -1%);
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
 }
 .movie a {
@@ -339,8 +319,11 @@ main {
   margin: 10px;
   padding: 10px;
   background: #fff;
+  transition: 0.2s;
+  cursor: pointer;
 }
 .book:hover {
+  transform: translate(0, -1%);
   box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.2);
 }
 .book a {
@@ -453,6 +436,68 @@ main {
   text-align: center;
   font-family: 'Varela Round', Arial, Helvetica, sans-serif;
 }
+/* Movie Alert Message */
+.alert-msg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: brightness(10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.alertmsg-container {
+  border-radius: 10px;
+  padding: 20px;
+  background: #fff;
+}
+
+.alertmsg-container h1 {
+  margin-bottom: 20px;
+  font-family: Righteous, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffbb00;
+}
+
+.alertmsg-container h3 {
+  margin-bottom: 20px;
+  font-family: 'Varela Round';
+}
+
+.alertmsg-container ul {
+  list-style-type: none;
+}
+
+.alertmsg-container ul li a {
+  text-decoration: none;
+  color: #ec0241;
+  font-family: 'Varela Round';
+}
+
+.alertmsg-container ul li a:hover {
+  color: #002;
+}
+
+.alertmsg-done {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  font-weight: 900;
+  font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+  background: #002;
+  cursor: pointer;
+}
+
+.alertmsg-close:active {
+  background-color: #000;
+}
+
 /* About */
 .about-box {
   position: fixed;
@@ -463,7 +508,7 @@ main {
   display: none;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(20px);
+  backdrop-filter: brightness(10%);
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -480,7 +525,6 @@ main {
   border-radius: 10px;
   padding: 10px;
   background: #fff;
-  box-shadow: 1px 2px 15px 6px rgba(0, 0, 0, 0.2);
 }
 .my-image {
   width: 32%;
