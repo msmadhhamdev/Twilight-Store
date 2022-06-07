@@ -108,7 +108,7 @@ const aboutBtn = document.querySelectorAll('.fa-user-circle');
 for (let el of aboutBtn) {
   el.addEventListener('click', () => document.querySelector('.about-box').style.display = 'flex');
 }
-const closeBtn = document.querySelectorAll('.about-close-btn');
+const closeBtn = document.querySelectorAll('.fa-times-circle');
 for (let el of closeBtn) {
   el.addEventListener('click', () => document.querySelector('.about-box').style.display = 'none');
 }

@@ -545,17 +545,17 @@ main {
 .about-me span {
   font-family: 'Varela Round', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.about-close-btn {
+.about-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 1.6em;
+}
+.about-head i {
+  transform: translate(0, -140%);
   cursor: pointer;
 }
-.about-close-btn i {
-  transform: translate(0, -140%);
-}
-.about-close-btn i:hover {
+.about-head i:hover {
   color: #aaa;
 }
 footer {
