@@ -33,25 +33,17 @@ const getNotifications = () => {
                 const container = document.createElement('div');
                 const heading = document.createElement('h2');
                 const msgBody = document.createElement('p');
-                msgBody.innerHTML = `<strong>Duration:</strong> ${notification.body}`;
+                msgBody.innerHTML = `<strong>Details:</strong> ${notification.body}`;
                 heading.textContent = notification.title;
                 const dateEl = document.createElement('p');
                 const date = new Date();
                 const dateTxt = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
-                dateEl.innerHTML = `<strong>Date added:</strong> ${dateTxt}`
+                dateEl.innerHTML = `<strong>Date:</strong> ${dateTxt}`
                 container.append(heading);
                 container.append(msgBody);
                 container.append(dateEl);
                 el.append(container);
-                el.innerHTML += '<i title="Delete" class="fas fa-trash"></i>';
                 notifyList.append(el);
-            });
-            document.querySelectorAll('.fa-trash').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    btn.parentElement.remove();
-                    notifyCheckLength();
-                });
-                
             });
             notifyCheckLength();
             notifyAppearanceCheck();

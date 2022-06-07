@@ -391,7 +391,6 @@ main {
   margin: 10px 0;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   border-radius: inherit;
   background: #fff;
@@ -407,7 +406,7 @@ main {
   background: #ff0045;
 }
 .message div {
-  width: 94%;
+  width: 100%;
 }
 .message h2 {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -417,17 +416,6 @@ main {
   width: 100%;
   word-break: break-all;
   word-wrap: break-word;
-}
-.message i {
-  padding: 10px;
-  background: #ff0045;
-  border: 4px solid #fff;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-}
-.message i:hover {
-  border: 4px double #fff;
 }
 .notify-callback {
   padding: 10px;
