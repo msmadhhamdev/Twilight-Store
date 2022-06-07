@@ -444,7 +444,7 @@ main {
   left: 0;
   right: 0;
   backdrop-filter: brightness(10%);
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 20;
@@ -549,7 +549,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.3em;
+  font-size: 1.6em;
   cursor: pointer;
 }
 .about-close-btn i {
