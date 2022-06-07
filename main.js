@@ -31,7 +31,7 @@ const darkMode = () => {
   document.querySelectorAll('.message').forEach(msg => {
     msg.style = "filter: invert()";
   });
-  document.querySelectorAll('.downloader').forEach(btn => btn.style = "filter: invert()");
+  document.querySelectorAll('.downloader').forEach(btn => btn.style = "border: 1px solid #888;");
   customizeBtn.setAttribute('title', 'Light Mode');
   document.querySelector('.about-container').style = "box-shadow: 1px 1px 8px 3px rgb(0, 0, 0, 0.3); filter: invert()";
   document.querySelector('.about-container img').style = "filter: invert()";
@@ -62,19 +62,18 @@ const darkMode = () => {
     document.querySelectorAll('.message').forEach(msg => {
       msg.style = "filter: invert() invert()";
     });
-    document.querySelectorAll('.downloader').forEach(btn => btn.style = "filter: invert() invert()");
-      customizeBtn.setAttribute('title', 'Dark Mode');
-      document.body.style = 'background: #eee !important';
-      localStorage.setItem('appearance', 'light');
-      document.querySelectorAll('.downloader').forEach(btn => btn.style = "filter: invert() invert()");
-      customizeBtn.setAttribute('title', 'Dark Mode');
-      document.querySelector('.about-container').style = "box-shadow: none; filter: invert() invert()";
-      document.querySelector('.about-container img').style = "filter: invert() invert()";
-      document.querySelector('.help-box').style = "filter: invert() invert()";
-      document.querySelector('.help-box').style = "filter: invert() invert()";
-      document.body.style = 'background: #eee !important';
-      localStorage.setItem('appearance', 'light');
-      document.querySelector('.page-head').style = 'filter: invert() invert()';
+    document.querySelectorAll('.downloader').forEach(btn => btn.style = "border: none");
+    customizeBtn.setAttribute('title', 'Dark Mode');
+    document.body.style = 'background: #eee !important';
+    localStorage.setItem('appearance', 'light');
+    customizeBtn.setAttribute('title', 'Dark Mode');
+    document.querySelector('.about-container').style = "box-shadow: none; filter: invert() invert()";
+    document.querySelector('.about-container img').style = "filter: invert() invert()";
+    document.querySelector('.help-box').style = "filter: invert() invert()";
+    document.querySelector('.help-box').style = "filter: invert() invert()";
+    document.body.style = 'background: #eee !important';
+    localStorage.setItem('appearance', 'light');
+    document.querySelector('.page-head').style = 'filter: invert() invert()';
   }
   //onLoad Call
   appearanceCheck();
