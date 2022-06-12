@@ -135,17 +135,40 @@ main {
   margin-bottom: 10px;
 }
 .container {
-  display: grid;
-  grid-template-columns: 400px 400px 400px;
-  grid-template-rows: 150px 150px 150px 150px 150px;
-  gap: 20px;
-  padding: 5px 5px 15px 5px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
 }
+
 .items {
+  flex-grow: 4;
+  width: 20vw;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 5px;
+  font-family: "Varela Round", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 100%;
+}
+.items .app-title {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 5px;
+}
+.items .app-title img {
+  height: 100%;
+  margin-right: 10px;
+}
+.items.game img {
+  width: auto;
+  border-radius: 5px;
+  height: 100%;
+}
+/*.items {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  height: 100%;
+  width: 20vw;
+  height: 200px;
   border-radius: 10px;
   background: #fff;
   padding: 5px;
@@ -159,7 +182,7 @@ main {
   box-shadow: 1px 1px 8px 1px rgba(255, 255, 255, 0.4) !important;
 }
 .items .app-image {
-  width: 48%;
+  width: 30%;
   height: 100%;
   border-radius: 10px;
   display: flex;
@@ -167,8 +190,8 @@ main {
   align-items: center;
 }
 .items img {
-  height: 100%;
-  width: auto;
+  background-color: #444;
+  width: 100%;
   border-radius: inherit;
 }
 .game-image {
@@ -211,7 +234,7 @@ main {
   color: #fff;
   background: #ff0045;
   border: none !important;
-}
+} */
 /* Movies */
 .movies-container {
   display: grid;
@@ -657,98 +680,3 @@ footer {
   border-radius: 10px;
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  header {
-    font-size: 1em;
-    padding: 8px;
-  }
-  header .tools {
-    width: 20%;
-  }
-  header .logo {
-    width: 40%;
-  }
-  header .logo span {
-    font-size: 1em;
-  }
-  header .logo img {
-    width: 30px;
-  }
-  nav {
-    font-size: 0.7em;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 5vh;
-    width: 100%;
-    margin: 0;
-    padding: 10px 5px;
-    border-radius: 20px 30px 0 0;
-    background: #fff;
-    box-shadow: 0 -1px 10px 1px rgba(0, 0, 0, 0.2);
-    overflow: visible;
-  }
-  nav:hover {
-    width: 100%;
-  }
-  nav a {
-    width: 50px;
-    color: #000;
-    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
-    padding: 10px 25px;
-    height: 100%;
-    margin: 0;
-    display: block;
-    text-align: center;
-    border-radius: 20px 20px 0 0;
-  }
-  nav a:hover {
-    color: #ff0045 !important;
-  }
-  nav a i {
-    width: 100%;
-    margin: 8px 0 0 0;
-    padding: 0;
-    display: block;
-    font-size: 2em;
-  }
-  nav a span {
-    display: block;
-    width: 100%;
-    text-align: center;
-    margin-top: 6px;
-  }
-  main {
-    margin-left: 0;
-    padding: 10px;
-    height: 88vh;
-    overflow-y: auto;
-    max-height: 88vh;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: 235px 235px 235px;
-    grid-template-rows: 100px 100px 100px 100px 100px;
-    padding-top: 10px;
-    gap: 18px;
-  }
-  .items {
-    font-size: 0.6em;
-  }
-  .items .app-image {
-    width: 42%;
-    height: 100%;
-  }
-  .items img {
-    height: auto;
-    width: 100%;
-  }
-  .items .downloader {
-    width: 89%;
-  }
-}
